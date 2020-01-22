@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title> flex-sample</title>
+	<style>
+		.container {
+			width: 100%;
+			height: wrap;
+			display: flex;
+			flex-direction: column;
+		}
+
+		.row {
+			width: 100%;
+			height: wrap;
+			display: flex;
+		}
+
+		.column {
+			width: 100%;
+			height: 500px;
+			display: flex;
+			margin-top: 5px;
+			flex-direction: column;
+		}
+
+		.box1 {
+			flex: 1;
+			background-color: red;
+			height: 100px;
+		}
+
+		.box2 {
+			flex: 2;
+			background-color: blue;
+			height: 100px;
+		}
+
+		.box3 {
+			flex: 3;
+			background-color: coral;
+			height: 100px;
+		}
+
+		.box4 {
+			flex: 1;
+			background-color: red;
+		}
+
+		.box5 {
+			flex: 2;
+			background-color: blue;
+		}
+
+		.box6 {
+			flex: 3;
+			background-color: coral;
+			display: flex;
+			flex-direction: row;
+		}
+
+		.item1 {
+			flex: 1;
+			background-color: cyan;
+			height: auto;
+		}
+
+		.item2 {
+			flex: 2;
+			background-color: chartreuse;
+			height: 100px;
+		}
+
+		.item3 {
+			flex: 3;
+			background-color: darkcyan;
+			height: auto;
+
+		}
+	</style>
+</head>
+
+<body class="container">
+	<div class="row">
+		<div class="box1"></div>
+		<div class="box2"></div>
+		<div class="box3"></div>
+	</div>
+	<div class="column">
+		<div class="box4"></div>
+		<div class="box5"></div>
+		<div class="box6">
+			<div class="item1"></div>
+			<div class="item2"></div>
+			<div class="item3"></div>
+		</div>
+	</div>
+
+</body>
+
+</html>
